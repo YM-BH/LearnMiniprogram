@@ -1,0 +1,8 @@
+
+<!-- 配置文件 -->
+<view class="title">一些配置</view>
+<view>全局配置，在 app.json 文件中进行</view>
+<view>TabBar 在 app.json 中进行配置</view>
+<view>页面的配置，在对应页面的 xx.json 中进行配置</view>
+<view>小程序的生命周期函数，在 app.js 文件</view>
+

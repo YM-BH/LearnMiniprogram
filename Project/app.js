@@ -1,18 +1,29 @@
 // app.js
 App({
-  onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+  // 生命周期函数
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+  onLaunch() {
+   console.log("生命周期回调——监听小程序初始化。 - onLaunch")
+
+   // 抛出一个错误，目的是调用 onError 函数
+  //  setTimeout(() => {
+  //    const error = new Error
+  //    throw error
+  //  }, 3000);
   },
+
+  onShow() {
+    console.log("生命周期回调——监听小程序启动或切前台。 - onShow")
+  },
+
+  onHide() {
+    console.log("生命周期回调——监听小程序切后台。- onHide")
+  },
+
+  onError() {
+    console.log("错误监听函数。- onError")
+  },
+
   globalData: {
     userInfo: null
   }

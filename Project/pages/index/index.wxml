@@ -1,0 +1,15 @@
+
+<!-- 1. 小程序的数据绑定 -->
+<view class="title">1. 小程序的数据绑定</view>
+<view>Hello {{name}}</view>
+<view>年龄是：{{age}}</view>
+
+<!-- 2. 列表展示：wx:for -->
+<view class="title">2. 列表展示</view>
+<view wx:key="unique" wx:for="{{players}}">{{item.id}} - {{item.name}} - {{item.age}}</view>
+
+<!-- 3. 监听事件改变 data -->
+<view class="title">3. 监听事件改变 data</view>
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="increment">+</button>
+<button size="mini" bindtap="decrement">-</button>
