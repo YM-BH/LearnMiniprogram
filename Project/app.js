@@ -11,9 +11,10 @@ App({
   //    throw error
   //  }, 3000);
   },
-
-  onShow() {
+  onShow(options) {
     console.log("生命周期回调——监听小程序启动或切前台。 - onShow")
+    // 可以通过 options 获取打开小程序的场景
+    console.log(options)
   },
 
   onHide() {
@@ -24,7 +25,9 @@ App({
     console.log("错误监听函数。- onError")
   },
 
+  // 全局对象
   globalData: {
-    userInfo: null
+    name: "Bob",
+    age: 24
   }
 })

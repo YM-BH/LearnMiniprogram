@@ -5,4 +5,15 @@
 <view>TabBar 在 app.json 中进行配置</view>
 <view>页面的配置，在对应页面的 xx.json 中进行配置</view>
 <view>小程序的生命周期函数，在 app.js 文件</view>
+<view>小程序的打开场景，可以从 onShow/onLaunch 函数的options 参数中查看</view>
 
+<!-- 获取用信息 -->
+<view class="title">获取用户信息</view>
+<view>获取用户新信息，需要 wx.login</view>
+<view>小程序登录流程 https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html</view>
+<button bindtap="getUserInfoClick">获取用户信息</button>
+
+<!-- 全局对象 -->
+<view class="title">全局对象</view>
+<button bindtap="getGlobalData">获取全局对象</button>
+<view>{{name}} - {{age}}</view>

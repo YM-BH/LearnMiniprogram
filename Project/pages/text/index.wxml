@@ -1,0 +1,25 @@
+<!-- text 组件 -->
+
+<view class="title">普通文本</view>
+<!-- 普通文本 -->
+<text>Hello World</text>
+
+<view class="title">文本是否可选，使用真机才可以测试</view>
+
+<!-- 文本是否可选 使用真机可以测试选中 -->
+<text user-select>Hello World</text>
+
+<view class="title">显示连续空格</view>
+<!-- 显示连续空格 -->
+<text>Hello World\n</text>
+<!-- 根据字体设置的空格大小，默认值 -->
+<text space="nbsp">Hello World\n</text>
+<!-- 	中文字符空格一半大小 -->
+<text space="ensp">Hello World\n</text>
+<!-- 中文字符空格大小 -->
+<text space="emsp">Hello World\n</text>
+
+
+<view class="title">解码</view>
+<!-- 是否解码  decode可以解析的有 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp; -->
+<text decode>2 &lt; 4</text>
