@@ -1,0 +1,20 @@
+<!--pages/button/button.wxml-->
+
+<!-- 普通文本 -->
+<button>按钮</button>
+
+<!-- size -->
+<button size="mini">按钮</button>
+
+<!-- type -->
+<button type="default">按钮</button>
+<button type="primary">按钮</button>
+<button type="warn">按钮</button>
+
+<button disabled>不可点击的按钮</button>
+
+<button plain>按钮</button>
+
+<button loading>按钮</button>
+
+<button hover-class="pressed">按钮</button>

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/view/view",
+    "pages/button/button",
     "pages/text/index",
     "pages/home/home",
     "pages/category/category",

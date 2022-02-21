@@ -1,0 +1,12 @@
+
+<!-- view 的基本使用 -->
+
+<view class="container1">这是一个容器</view>
+
+<!-- hover-class -->
+<view class="container2" hover-class="hover-container2">容器2</view>
+
+<!-- hover-stop-propagation -->
+<view class="container-parent" hover-class="hover-parent">
+  <view class="container-child" hover-class="hover-child" hover-stop-propagation></view>
+</view>

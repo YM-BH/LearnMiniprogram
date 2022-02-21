@@ -1,0 +1,36 @@
+
+.container1 {
+  background: red;
+}
+
+.container2 {
+  background: orange;
+  width: 100px;
+  height: 100px;
+}
+
+.hover-container2 {
+  background: green;
+  font-size: 30px;
+}
+
+.container-parent {
+  background: purple;
+  width: 200px;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.hover-parent {
+  background-color: greenyellow;
+}
+
+.container-child {
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+.hover-child {
+  background: orange;
+}
