@@ -1,0 +1,18 @@
+<!--pages/image/image.wxml-->
+
+<!-- 加载本地图片 -->
+<image src="/assets/dxm.jpeg"></image>
+
+<!-- 加载网路图片 -->
+<image src="https://img2.baidu.com/it/u=1997937858,1434141002&fm=26&fmt=auto"></image>
+
+<!-- 从本地相册选择图片/拍照 -->
+<button bindtap="handleChoosePhoto">选择</button>
+<image src="{{photoPath}}"></image>
+
+<!-- lazy-load -->
+<image wx:for="{{10}}" 
+       lazy-load
+       bindload="loadPhoto" 
+       src="https://img2.baidu.com/it/u=1997937858,1434141002&fm=26&fmt=auto">
+</image>

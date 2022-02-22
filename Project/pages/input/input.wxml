@@ -1,0 +1,15 @@
+
+<!-- value -->
+<input value="默认值"/>
+
+<!-- type：决定键盘的类型 -->
+<input type="number"/>
+
+<!-- 暗文 -->
+<input password/>
+
+<!-- 占位 -->
+<input placeholder="占位文字"/>
+
+<!-- 绑定事件 -->
+<input bindinput="handleInput" bindfocus="handleFocus" bindblur="hanleBlur"/>
