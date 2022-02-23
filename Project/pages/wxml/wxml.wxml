@@ -1,0 +1,51 @@
+<!--pages/wxml/wxml.wxml-->
+
+<!-- {{}} 语法 -->
+
+<view>{{message}}</view>
+<view>{{firstname}} {{lastname}}</view>
+<view>{{firstname + " " + lastname}}</view>
+<view>{{age > 18 ? "成年了" : "未成年呢"}}</view>
+
+<view>{{date}}</view>
+
+<button bindtap="changeColor">切换样式</button>
+<view class="box {{isActive ? 'active' : '' }}">这是一段恩子</view>
+
+<!-- 逻辑判断 -->
+<view>-------- 逻辑判断 -----------</view>
+<button bindtap="switchShow">切换</button>
+<view wx:if="{{isShow}}">一段文字罢了</view>
+
+<button bindtap="increment">加6分</button>
+<view>当前分数：{{score}}</view>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 80}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- block 标签 -->
+<view>-------- block 标签 -----------</view>
+
+<!-- 逻辑判断 -->
+<block wx:if="{{isShow}}">
+  <view>这是个容器</view>
+  <text>这是个文本</text>
+  <button>这是一个按钮</button>
+</block>
+
+<!-- 循环 -->
+<block wx:for="{{3}}">
+  <view>这是个容器</view>
+  <text>这是个文本</text>
+  <button>这是一个按钮</button>
+</block>
+
+<!-- 给wx:for 的 item 和 index 起别名 -->
+<view>-------- 给wx:for 的 item 和 index 起别名 --------</view>
+
+<view wx:for="{{players}}" 
+      wx:for-item="player"
+      wx:for-index="i">
+  {{player}} - {{i}}
+</view>
