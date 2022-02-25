@@ -1,0 +1,15 @@
+<!--pages/wxs/wxs.wxml-->
+
+<!-- 只能使用相对路径导入 wxs 文件 -->
+<wxs src="../../wxs/info.wxs" module="info" />
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(24, 34)}}</view>
+
+
+<!-- 价格格式化 -->
+<wxs src="../../wxs/format.wxs" module="format" />
+<view>{{format.priceFormat(23.3333, 2)}}</view>
+
+<!-- 日期格式化 -->

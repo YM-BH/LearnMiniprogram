@@ -8,7 +8,8 @@ Page({
       {id: 112, name: "Melo", age: 38},
       {id: 113, name: "O'neal", age: 46},
     ],
-    counter: 0
+    counter: 0,
+    cars: ["奔驰", "宝马", "奥迪"]
   },
 
   increment() {
@@ -21,5 +22,12 @@ Page({
     this.setData({
       counter: this.data.counter -= 1
     })
+  },
+
+  handleItemClick(event) {
+    console.log(event)
+    const title = event.currentTarget.dataset.item
+    const index = event.currentTarget.dataset.index
+    console.log(`${title} - ${index}`)
   }
 })

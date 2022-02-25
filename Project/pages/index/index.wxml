@@ -13,3 +13,16 @@
 <view>当前计数：{{counter}}</view>
 <button size="mini" bindtap="increment">+</button>
 <button size="mini" bindtap="decrement">-</button>
+
+<!-- 4. 事件参数的传递 -->
+<view class="title">4. 事件参数的传递</view>
+<view class="container1">
+  <block wx:for="{{cars}}" wx:key="{{index}}">
+    <view class="item" 
+          bindtap="handleItemClick"
+          data-index="{{index}}"
+          data-item="{{item}}">
+      {{item}}
+    </view>
+  </block>
+</view>
