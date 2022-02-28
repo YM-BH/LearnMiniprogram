@@ -1,0 +1,3 @@
+<!--pages/component/component.wxml-->
+<my-cpn></my-cpn>
+<my-cpn/>
