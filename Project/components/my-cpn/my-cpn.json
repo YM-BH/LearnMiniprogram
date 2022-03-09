@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "her-cpn": "/components/her-cpn/her-cpn"
+  }
 }

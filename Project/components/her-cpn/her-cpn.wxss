@@ -1,0 +1,5 @@
+/* components/her-cpn/her-cpn.wxss */
+
+.her {
+  background: orange;
+}

@@ -1,3 +1,12 @@
 /* pages/component/component.wxss */
+.red {
+  color: red;
+}
 
+.green {
+  color: green;
+}
 
+.blue {
+  color: blue;
+}

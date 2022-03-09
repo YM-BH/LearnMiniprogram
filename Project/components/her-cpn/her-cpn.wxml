@@ -1,0 +1,2 @@
+<!--components/her-cpn/her-cpn.wxml-->
+<view class="her">这是 her-cpn 组件</view>

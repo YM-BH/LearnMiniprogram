@@ -1,3 +1,30 @@
 <!--pages/component/component.wxml-->
-<my-cpn></my-cpn>
-<my-cpn/>
+<!-- <my-cpn></my-cpn> -->
+<!-- <my-cpn/> -->
+
+<my-prop title="哈哈哈" titleclass="red"/>
+<my-prop title="呵呵呵" titleclass="green" />
+<my-prop title="嘻嘻嘻" titleclass="blue" />
+
+<!-- 自定义组件内部方法向外传递 -->
+<view>当前计数：{{counter}}</view>
+<my-event bind:increment="increment" />
+
+<!-- tab-control 练习 -->
+<h-tab-control titles="{{['吃饭', '喝酒', '打游戏']}}" bind:itemClick="itemClick"/>
+
+<!-- 修改自定义组件内部的数据 -->
+<button bindtap="changeInternalData">修改组件内部数据</button>
+<my-sel id="sel-id" />
+
+<!-- 插槽的使用 -->
+<my-slot>
+  <button size="mini">我是个按钮</button>
+</my-slot>
+
+<!-- 多插槽的使用 -->
+<my-mul-slot>
+  <slider slot="slot1"></slider>
+  <button slot="slot2">按钮</button>
+  <text slot="slot3">文本</text>
+</my-mul-slot>
